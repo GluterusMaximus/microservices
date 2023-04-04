@@ -1,0 +1,24 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --no-error-on-unmatched-pattern --max-warnings=0 --ext .jsx --ext .js --ext .ts . --ignore-path .gitignore && prettier --no-error-on-unmatched-pattern --ignore-path .gitignore -c \"**/*.js\" \"**/*.jsx\" \"**/*.ts\" \"**/*.json\" \"**/*.md\" \"**/*.yml\"",
+    "lint-fix": "eslint --no-error-on-unmatched-pattern --ext .jsx --ext .js --ext .ts . --ignore-path .gitignore --fix && prettier --no-error-on-unmatched-pattern --ignore-path .gitignore --write \"**/*.js\" \"**/*.jsx\" \"**/*.ts\" \"**/*.json\" \"**/*.md\" \"**/*.yml\"",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-metarhia": "^0.0.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7"
+  }
+}
